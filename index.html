@@ -20,13 +20,15 @@
     </div>
     <div class="card" id="random-number">
         <div class="card-body">
-            <p></p>
+            <p>0</p>
         </div>
     </div>
     <div class="card" id="wins-losses">
         <div class="card-body">
-            <p id="wins">wins: 0</p>
-            <p id="losses">Losses: 0</p>
+            <span>wins:</span>
+            <p id="wins">0</p>
+            <span>Losses:</span>
+            <p id="losses">0</p>
         </div>
     </div>
     <div class="crystal-options">
@@ -35,16 +37,20 @@
         <img src="assets/images/yellow.png" id="yellow" height="120px" width="120px">
         <img src="assets/images/purple.png" id="purple" height="120px" width="120px">
     </div>
-    <div class="card" id="score">
+    <div class="card">
         <div class="card-body">        
             <p>Your total score is:</p>
         </div>
     </div>
-    <div class="card" id="runnung total">
-        <div class="card-body">
+    <div class="card">
+        <div class="card-body" id="score">
             0
         </div>    
     </div>
-    <link rel="text/javascript" href="game.js">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script  src="assets/javascript/game.js"></script>
 </body>
 </html>
