@@ -1,0 +1,62 @@
+body {
+    width: 600px;
+    background-image: url(../images/background.jpg);
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    background-color: mediumpurple;
+    color: whitesmoke;
+    border-bottom: darkviolet;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+#description {
+    background-color: thistle;
+    color: indigo;
+    width: 600px;
+    height: auto;
+
+}
+
+#random-number {
+    height: 120px;
+    color: indigo;
+    background-color: orchid;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#wins-losses {
+    height: 120px;
+    color: thistle;
+    background-color: darkorchid;
+    text-align: center;
+    padding-top: 0px;
+}
+
+#crystal-row {
+    width: 600px;
+}
+
+#red {
+    background-color: whitesmoke;
+    margin-right: 13.3px;
+}
+
+#heart {
+    background-color: whitesmoke;
+    margin-right: 13.3px;
+}
+
+#yellow {
+    background-color: whitesmoke;
+    margin-right: 13.3px;
+}
+
+#purple {
+    background-color: whitesmoke;
+    margin-right: 0px;
+}
+

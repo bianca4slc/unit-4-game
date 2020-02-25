@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystal Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <h1 id="header">Crystals Collector</h1>
@@ -18,26 +19,38 @@
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
     </div>
-    <div class="card" id="random-number">
-        <div class="card-body">
-            <p>0</p>
+    <div class="row">
+        <div class="col-6">
+            <div class="card" id="random-number">
+                <div class="card-body">
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card" id="wins-losses">
+                <div class="card-body">
+                    <div class="row">
+                        <p>Wins:</p>
+                        <span id="wins">0</span>
+                    </div>
+                    <div class="row">
+                        <p>Losses:</p>
+                        <span id="losses">0</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card" id="wins-losses">
-        <div class="card-body">
-            <span>wins:</span>
-            <p id="wins">0</p>
-            <span>Losses:</span>
-            <p id="losses">0</p>
+    <div class="row" id="crystal-row">
+        <div class="crystal-options">
+            <img src="assets/images/red.png" id="red" height="140px" width="140px">
+            <img src="assets/images/heart.png" id="heart" height="140px" width="140px">
+            <img src="assets/images/yellow.png" id="yellow" height="140px" width="140px">
+            <img src="assets/images/purple.png" id="purple" height="140px" width="140px">
         </div>
     </div>
-    <div class="crystal-options">
-        <img src="assets/images/red.png" id="red" height="120px" width="120px">
-        <img src="assets/images/heart.png" id="heart" height="120px" width="120px">
-        <img src="assets/images/yellow.png" id="yellow" height="120px" width="120px">
-        <img src="assets/images/purple.png" id="purple" height="120px" width="120px">
-    </div>
-    <div class="card">
+    <div class="card" id="total">
         <div class="card-body">        
             <p>Your total score is:</p>
         </div>
