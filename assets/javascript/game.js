@@ -10,20 +10,26 @@ var Wins = 0;
 var Losses = 0;
 
 function crystalNumber() {
-  return Math.floor(Math.random() * (1, 12 + 1));
+  // return Math.floor(Math.random() * (1, 12 + 1));
+  return Math.floor(Math.random() * 12) + 1;
+
 }
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * (12, 120 + 1) + 12);
+  return Math.floor(Math.random() * 102)  + 19;
+
+
+  // return Math.floor(Math.random() * (19, 120+ 1));
   }
 
-$("#random-number").text(getRandomNumber());
+  var targetScore = getRandomNumber();
+$("#random-number").text(targetScore);
 
 // crystal click = adds points to player score
 // update player score counter with each click
 // player must match their score to random number to win
 // player loses if score goes above random number
-$(".crystal-options").on("click", "img", function() {
+$("#crystal-options").on("click", "img", function() {
   var clickedCrystal = $(this).attr("id");
 
   if (clickedCrystal === "red") {
@@ -39,19 +45,28 @@ $(".crystal-options").on("click", "img", function() {
   $("#score").text(crystalTotal);
 
   // track total wins/losses
-  if (crystalTotal === getRandomNumber()) {
+  if (crystalTotal === targetScore) {
     Wins = Wins + 1;
     $("#wins").text(Wins);
-    // function to reset game
+    resetGame()
   }
 
-  if (crystalTotal > getRandomNumber()) {
+  if (crystalTotal > targetScore) {
     Losses = Losses + 1;
     $("#losses").text(Losses);
+  resetGame()
   }
+
 });
 
-
+function resetGame() {
+  crystalTotal = 0
+  $("#score").text(crystalTotal);  // reset target
+  $("#random-number").text(getRandomNumber());
+   crystal1 = crystalNumber();
+   crystal2 = crystalNumber();
+   crystal3 = crystalNumber();
+   crystal4 = crystalNumber();}
 // game resets at win or loss
 // random values refreshed when game is reset
 // do not refresh page to restart game

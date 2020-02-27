@@ -36,27 +36,29 @@ h1 {
     padding-top: 0px;
 }
 
-#crystal-row {
-    width: 600px;
-}
-
 #red {
     background-color: whitesmoke;
-    margin-right: 13.3px;
+    /* margin-right: 13.3px; */
 }
 
 #heart {
     background-color: whitesmoke;
-    margin-right: 13.3px;
+    /* margin-right: 13.3px; */
 }
 
 #yellow {
     background-color: whitesmoke;
-    margin-right: 13.3px;
+    /* margin-right: 13.3px; */
 }
 
 #purple {
     background-color: whitesmoke;
-    margin-right: 0px;
+}
+
+#total {
+    height: 100px;
+}
+#score {
+    height: 100px;
 }
 
